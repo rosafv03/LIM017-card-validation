@@ -1,70 +1,54 @@
 const validator = {
-  isValid: function (digito) {
-      //let convertirDigito = parseInt(digito);
-    //console.log(convertirDigito);
-    let arrayNumber = Array.from(digito);
-    let arrayNumberInver = [];
-    let sumaNumber = 0;
-    let resultadoFinal = ""
-    for (let i = 0; i < arrayNumber.length; i++) {
-      arrayNumberInver.push(arrayNumber[i]);
-    }
-    arrayNumberInver.reverse();
-     console.log("Los numero son: " + arrayNumber.join(''));
-    //console.log("Los numero invertidos son: " + arrayNumberInver); 
+  isValid: function (card) {
+      
+    let arrayNumber = Array.from(card);
+    let sumNumber = 0;
+    let result = ""
+    arrayNumber.reverse();
+     console.log("Los number son: " + arrayNumber.join(''));
+     console.log("Los number invertidos son: " + arrayNumber); 
 
-    for (let i = 0; i < arrayNumberInver.length; i++) {
-      let numero= parseInt(arrayNumberInver[i]);
-      if ((i + 1) % 2 == 0) {
-        numero *= 2;
-          if (numero >= 10) {
-          numero -= 9;
+      for (let i = 0; i < arrayNumber.length; i++) {
+      let number= parseInt(arrayNumber[i]);
+      if ((i + 1) % 2 == 0) {  //si es par
+        number *= 2; // number = number*2
+          if (number >= 10) {
+          number -= 9;
         }
       }
-      sumaNumber = sumaNumber + numero;
+      sumNumber = sumNumber + number;
 
-     // console.log("aplicando lunh los digitos quedan ordenados asi " + numero) 
-        }
+     // console.log("aplicando lunh los digitos quedan ordenados asi " + number) 
+      }
     
-   // console.log("la suma de cifras del arreglo queda asi: " + sumaNumber); 
-    if (sumaNumber % 10 == 0) {
-      resultadoFinal = true;
-    }
-    else {
-      resultadoFinal = false;
-    }
-    // console.log(resultadoFinal); 
-    return resultadoFinal;
-
+   // console.log("la suma de cifras del arreglo queda asi: " + sumNumber); 
+      if (sumNumber % 10 == 0) {
+      result = true;
+      }
+      else {
+      result = false;
+      }
+    // console.log(result); 
+      return result;
      
-
   },
 
-  /* function maskify(resultadoFinal){
-    let cantidad =validator.length-4;
-    let mascara='';
-    for (let i=0;i<cantidad;i++){
-      mascara=mascara+"*";
+    maskify: function(card){
+      let arrayNumber = Array.from(card);
+      let noMask=[];
+      let mask=[];
+      for (let i = 0; i < arrayNumber.length-4; i++) {
+        mask.push('#');
+      }
+      //console.log(mask)
+      for (let i = arrayNumber.length-4; i <arrayNumber.length ; i++) {
+        noMask.push(arrayNumber[i]);
     }
-return mascara + validator.substring((resultadoFinal.length-4),(resultadoFinal.length));
-    return cardNumber;
-  } */
+      let arrayEnmascarado=[...mask,...noMask].join('')
+      return arrayEnmascarado;
+      }
 
 
-  maskify: function(digito){
-    let arrayNumber = Array.from(digito);
-    console.log(digito);
-    let arrayNumberInver = [];
-    console.log(arrayNumberInver);
-    for (let i = 0; i < arrayNumber.length; i++) {
-     arrayNumberInver.push(arrayNumber[i]);
-    }
-    console.log(arrayNumberInver);
-    arrayNumber.splice(0,arrayNumber.length-4,"*","*","*","*","*","*","*","*","*","*","*","*");
-    let arrayEnmascarado=arrayNumber.join('');
-    console.log(arrayEnmascarado);
-    return arrayEnmascarado;
-    }
 }
 
 

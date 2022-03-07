@@ -1,4 +1,4 @@
-# Tarjeta de crédito válida
+<!-- # Tarjeta de crédito válida
 
 ## Índice
 
@@ -38,7 +38,7 @@ los últimos cuatro.
 
 La temática es libre. Tú debes pensar en qué situaciones de la vida real se
 necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
+experiencia de uso (qué pantallas, explicaciones, messages, colores, ¿marca?)
 etc.
 
 Trabajando en parejas aprenderán a construir una aplicación web que interactuará
@@ -513,7 +513,7 @@ Organización del Trabajo:
 * [Scrum en Detalle](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). No
   esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a
   poco a lo largo del -_bootcamp_.
-* [Blog: cómo funciona el algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numeros-de-tarjetas-de-credito.html).
+* [Blog: cómo funciona el algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numbers-de-tarjetas-de-credito.html).
 
 ## 9. Checklist
 
@@ -543,3 +543,27 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 
 * [ ] Implementa `validator.getIssuer`.
 * [ ] Interfaz muestra la franquicia de la tarjeta
+ -->
+ ### ENTRADAS AL MUNDIAL
+
+ ## Resumen del proyecto
+ El proyecto “Entradas al Mundial” es una pagina web donde se podrá hacer compras de entradas al mundial, a través de una tarjeta de crédito, la cual pasa por un proceso de validación.
+
+ ## Usuarios y Objetivos del producto
+ Los usuarios de la ampliación son personas mayores de 18 años que cuenten con una tarjeta valida para realizar compras por internet.
+El objetivo es que el usuario no tenga la necesidad de concurrir a un establecimiento físico y hacer enormes colas para adquirir una entrada, por el contrario, a través de un “click” el usuario estaría realizando su compra.
+
+ ## Problemas/necesidades de los usuarios
+El usuario necesita adquirir una entrada para el partido que desee asistir,necesita que este proceso sea fácil y rápido.
+
+## Propuesta
+	Se creó un boceto a mano de una página web de una sola página, donde estaría ubicado el formulario de manera centrada y con un fondo alusivo al mundial. 
+
+ ## Desarrollo
+ El desarrollo del proyecto ha sido dividido en 4 etapas :
+  * Hacer en HTML la estructura visual de la aplicación.
+  * Hacer en CSS los estilos a usar para mejorar la vista del proyecto.
+  Elaborar las funciones:
+  * "validar" el cual aplicará el algoritmo de luhn y asi mismo se validará que los campos no estén vacios y que el input sea numérico. La función devolverá un mensaje si la tarjeta es valida o no.
+  * "enmascarar" si la tarjeta de crédito es válida Cuando de clic en el botón válido,mostrará un mensaje donde sólo deben ser visibles los últimos 4 números, es decir, debe ocultar los otros números (ej: si escribo 2356485745213256, debe salir después ############3256).
+
