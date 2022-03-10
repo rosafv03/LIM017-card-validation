@@ -1,0 +1,78 @@
+/* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}  */
+body {
+  height: 900px;
+  background-image: url(img/pelota.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+
+}
+footer{
+  color: white;
+  font-size: 18px;
+}
+h4{
+  text-align: center;
+  font-size: 28px
+}
+.form-register {
+  width: 20%;
+ background: #fe3434;
+  padding: 40px;
+  margin: auto;
+  /* //MARGIIN TOP SIRVE PARA NO FIJAR ARRIBA EL CUADRO */
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #7e7c7c;
+  margin-bottom:15px;
+    
+}
+
+.cardDigit{
+  width: 90%;
+  padding:10px;
+  margin-bottom:15px;
+  border-radius: 4px;
+  /*height: 20%;
+  /*margin: 10%;*/
+  
+}
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 2px solid #3e413f;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+  }
+
+.form-register .botons {
+  width: 100%;
+  background: #2b8a47;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 20px;
+  
+}
+p {
+  font: roboto;
+  font-size: 18px;
+  text-align: center;
+}
+label{
+  font: roboto;
+  font-size: 18px;
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+      <header>
+      </header>
+        <section class="form-register">
+          <h4> <strong>¡Estás a un paso de tu entrada!</strong></h4>
+          <label for="name"> Nombres </label>
+          <input class="cardDigit" type="text" name="name" id="name" placeholder="Ingrese sus Nombres"> 
+          <label for="surnames"> Apellidos </label>
+          <input class="cardDigit" type="text" name="surnames" id="surnames" placeholder="Ingrese sus Apellidos">
+          <label for="mail"> Correo  </label>
+          <input class="cardDigit" type="email" name="mail" id="correo" placeholder="Ingrese su Correo">
+          <label for="digit"> Número de Tarjeta </label>
+          <input class="cardDigit" type="number" name="digit" id="digit" placeholder="ingrese número de tarjeta" required="" pattern="[0-9]+"> <br> 
+          <button class="botons" type="submit" id="check">Validar Tarjeta</button>
+          <p id="message0"></p>
+          <p id="message"></p>
+        </section>
+      <footer>
+      Derechos del autor 2022
+      </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+
+</html>
